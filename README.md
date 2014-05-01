@@ -43,14 +43,17 @@ Imagine the following JSON object is Model data
       }]
     }
     
-    
-    this.model.select('firstname, lastname');
+
+    `this.model.select('firstname, lastname');`
+
     Object {
       firstname: "Venkatraman",
       lastname: "Ramamoorthy"
     }
 
-    this.model.select('firstname as fname, lastname as lname');
+
+    `this.model.select('firstname as fname, lastname as lname');`
+
     Object {
       fname: "Venkatraman",
       lname: "Ramamoorthy"
