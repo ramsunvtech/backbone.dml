@@ -44,7 +44,7 @@ Imagine the following JSON object is Model data
     }
     
 
-    `this.model.select('firstname, lastname');`
+<h2>this.model.select('firstname, lastname');</h2>
 
     Object {
       firstname: "Venkatraman",
@@ -52,14 +52,15 @@ Imagine the following JSON object is Model data
     }
 
 
-    `this.model.select('firstname as fname, lastname as lname');`
+<h2>this.model.select('firstname as fname, lastname as lname');</h2>
 
     Object {
       fname: "Venkatraman",
       lname: "Ramamoorthy"
     }
 
-    this.model.select('firstname as name, addressBook[1] as permanentAddress');
+<h2>this.model.select('firstname as name, addressBook[1] as permanentAddress');</h2>
+
     Object {
       name: "Venkatraman", 
       permanentAddress: {
@@ -71,7 +72,8 @@ Imagine the following JSON object is Model data
       }
     }
 
-    this.model.select('addressBook[type=last] as lastAddress');
+<h2>this.model.select('addressBook[type=last] as lastAddress');</h2>
+
     Object {
       lastAddress: [
         {
@@ -91,7 +93,8 @@ Imagine the following JSON object is Model data
       ]
     }
 
-    this.model.select('addressBook[type=last && city=Bangalore] as lastBangaloreAddress');
+<h2>this.model.select('addressBook[type=last && city=Bangalore] as lastBangaloreAddress');</h2>
+
     Object {
       lastBangaloreAddress: {
         area: "Koramangala",
