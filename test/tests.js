@@ -1,3 +1,5 @@
+(function( window ) {
+    
 var Backbone = require('backbone'),
     _ = require('underscore'),
     QUnit = require('qunit-cli');
@@ -43,4 +45,7 @@ test( "get one attribute", function( assert ) {
   assert.ok( myProfile.select('firstname') == {
         firstname: "Venkatraman"
     }, "Passed!" );
+});
+
+  
 });
