@@ -1,4 +1,4 @@
-# Backbone DML [![Build Status](https://secure.travis-ci.org/amccloud/backbone-dotattr.png)](https://travis-ci.org/ramsunvtech/backbone.dml]) #
+# Backbone DML [![Build Status](https://secure.travis-ci.org/amccloud/backbone-dotattr.png)](https://travis-ci.org/ramsunvtech/backbone.dml])#
 
 This BackBone Plugin add the few Data Manipulation Language concept in BackBone model.
 
