@@ -1,5 +1,3 @@
-(function( window ) {
-    
 var Backbone = require('backbone'),
     _ = require('underscore'),
     QUnit = require('qunit-cli');
@@ -41,11 +39,8 @@ var myProfile = new Backbone.Model({
     }]
 });
 
-test( "get one attribute", function( assert ) {
-  assert.ok( myProfile.select('firstname') == {
+QUnit.test( "get one attribute", function( assert ) {
+  assert.deepEqual( myProfile.select('firstname'), {
         firstname: "Venkatraman"
-    }, "Passed!" );
-});
-
-  
+    }, "got the only one attribute" );
 });
