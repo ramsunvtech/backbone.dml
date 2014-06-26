@@ -12,7 +12,7 @@
     "qunit-cli": "0.1.4"
   },
   "scripts": {
-    "test": "qunit-cli test/index.html"
+    "test": "qunit-cli test/tests.js"
   },
   "main": "backbone.dml.js",
   "version": "0.1.0",
