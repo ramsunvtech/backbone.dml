@@ -36,7 +36,7 @@ var myProfile = new Backbone.Model({
 });
 
 test("get one attribute", function () {
-    equal(myProfile.select('title'), {
+    equal(myProfile.select('firstname'), {
         firstname: "Venkatraman"
     });
 });
