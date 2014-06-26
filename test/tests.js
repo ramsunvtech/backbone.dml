@@ -1,3 +1,6 @@
+var Backbone = require('backbone'),
+    _ = ('underscore');
+
 var myProfile = new Backbone.Model({
     'firstname': 'Venkatraman',
     'lastname': 'Ramamoorthy',
