@@ -1,0 +1,24 @@
+{
+  "name": "backbone.dml",
+  "description": "A plugin helps to create Data Manipulation Language concept in BackBone model.",
+  "url": "https://github.com/ramsunvtech/backbone.dml.git",
+  "keywords": ["model", "dml"],
+  "author": "Venkatraman Ramamoorthy <ramsunvtech@gmail.com>",
+  "dependencies": {
+    "underscore": ">=1.4.3",
+    "backbone": ">=1.0.0"
+  },
+  "devDependencies": {
+    "phantomjs": "1.8.1-3"
+  },
+  "scripts": {
+    "test": "phantomjs test/runner.js test/index.html"
+  },
+  "main": "backbone.dml.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramsunvtech/backbone.dml.git"
+  }
+}
