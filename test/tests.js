@@ -1,6 +1,8 @@
 var Backbone = require('backbone'),
     _ = require('underscore'),
     QUnit = require('qunit-cli');
+    
+QUnit.module('BackBone DML');
 
 var myProfile = new Backbone.Model({
     'firstname': 'Venkatraman',
