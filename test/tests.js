@@ -1,5 +1,5 @@
 var Backbone = require('backbone'),
-    _ = ('underscore');
+    _ = require('underscore');
 
 var myProfile = new Backbone.Model({
     'firstname': 'Venkatraman',
