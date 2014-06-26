@@ -9,7 +9,9 @@
     "backbone": ">=1.0.0"
   },
   "devDependencies": {
-    "qunit-cli": "0.1.4"
+    "qunit-cli": "0.1.4",
+    "underscore": ">=1.4.3",
+    "backbone": ">=1.0.0"
   },
   "scripts": {
     "test": "qunit-cli test/tests.js"
