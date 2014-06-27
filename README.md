@@ -1,7 +1,7 @@
 Backbone DML
 =========
 
-# Backbone DML[![Build Status](https://api.travis-ci.org/ramsunvtech/backbone.dml.png)](https://travis-ci.org/ramsunvtech/backbone.dml])#
+[![Build Status](https://api.travis-ci.org/ramsunvtech/backbone.dml.png)](https://travis-ci.org/ramsunvtech/backbone.dml)
 
 This BackBone Plugin add the few Data Manipulation Language concept in BackBone model.
 
