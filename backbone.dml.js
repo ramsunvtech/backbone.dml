@@ -127,4 +127,4 @@
         }
     });
     return Backbone;
-})(_, Backbone));
+}));
