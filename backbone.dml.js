@@ -1,4 +1,25 @@
-(function(_, Backbone) {
+/**
+ *
+ * Backbone-DML v0.1
+ *
+ * Copyright (c) 2014 Venkatraman Ramamoorthy
+ *
+ * https://github.com/ramsunvtech/backbone.dml
+ * Licensed under the MIT License
+ */
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(['underscore', 'backbone'], factory);
+    } else if (typeof exports !== 'undefined') {
+        // CommonJS / Node.js
+        module.exports = factory(require('underscore'), require('backbone'));
+    } else {
+        // globals
+        factory(_, Backbone);
+    }
+}(function(_, Backbone) {
+  'use strict';
     _.extend(Backbone.Model.prototype, {
         select: function(statement) {     
           var attr = this.attributes,
@@ -37,7 +58,7 @@
             else if(_.isString(arg)) {
               var condition = arg.split(' && '),
                   where = {},
-                  whereValue;
+                  whereValue, index;
               for(index in condition) {
                 var condInfo = condition[index].split('=');
 
@@ -52,7 +73,8 @@
 
           // Get the Field Name Alias and their Value.
           function getFields(fieldsList, attr) {
-            var selected = {};
+            var selected = {},
+                index, fieldName, fieldAlias, fieldValue;
 
             // Iterating each Fields.
             for(index in fieldsList) {
@@ -104,4 +126,5 @@
           return selected;
         }
     });
-})(_, Backbone);
+    return Backbone;
+})(_, Backbone));
