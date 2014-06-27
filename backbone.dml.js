@@ -104,4 +104,4 @@
           return selected;
         }
     });
-})(window._, window.Backbone);
+})(_, Backbone);
