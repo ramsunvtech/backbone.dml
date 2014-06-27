@@ -2,6 +2,8 @@ var Backbone = require('backbone'),
     _ = require('underscore'),
     QUnit = require('qunit-cli');
     
+require('./backbone.dml.js');
+    
 QUnit.module('BackBone DML');
 
 var myProfile = new Backbone.Model({
